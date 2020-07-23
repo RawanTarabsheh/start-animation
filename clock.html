@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pro Project In BootStrap</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/custumstyle.css">
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+	<style type="text/css">
+		body
+		{background-color: #000;}		
+		.circle
+		{
+			position: absolute;
+			top: 50%;left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		.circle2
+		{
+			position: absolute;
+			top: 50%;left: 50%;
+			transform: translate(-50%,-50%);
+		}
+		.circle1
+		{
+			position: absolute;
+			transform: translate(-50%, -50%);
+			top: 22%;left: 50%;
+		}
+		.slash 
+		{
+			position: absolute;
+			 top: 49%;left: 49%;
+             transform-origin: left top;
+             animation:clock 5s linear infinite;
+		}
+		@keyframes clock
+		{
+			100%{ transform: rotate(360deg);}	
+		}
+		.slash:hover
+		{
+			cursor: pointer;
+			animation-play-state:paused;
+		}
+	</style>
+</head>
+<body>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+	<div class="row">
+		<div class="col-lg-4">
+			
+			
+		</div>
+		<div class="col-lg-4 mt-5 text-center pt-5" style="background-color: #fff; height: 500px;">
+					<label> My clock  </label>
+
+			<div class="circle1">
+				<i class="far fa-circle " style="color: #00FA9A; font-size: 50px;"></i>
+			</div>
+			<div class="circle">
+				<i class="far fa-circle " style="color: #00FA9A	; font-size: 250px;"></i>
+				<i class="fas fa-circle circle2" style="color: #00FA9A;"></i>
+				<i class="fas fa-slash slash" style="color: #00FA9A	;font-size: 50px;"></i>	
+			</div>
+		</div>
+
+
+		<div class="col-lg-4"></div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#street	{
+			width: 1300px;
+			height: 600px;
+			position: absolute;
+			z-index: -1;
+
+		}
+		#blue
+		{
+			position: absolute;
+			top:330px;
+			animation: car 3s infinite;
+			width: 100px;
+			height: 50px;
+
+
+		}
+		#green
+		{
+			position: absolute;
+			top:390px;
+			animation: car 4s infinite;
+			width: 100px;
+			height: 50px;
+
+		}
+		
+		#pink
+		{
+			position: absolute;
+			top: 450px;
+			animation: car 5s infinite;
+			width: 100px;
+			height: 50px;
+		}
+		@keyframes car {
+			from { left :0px;}
+			to { left: 1100px; }
+		}
+	</style>
+</head>
+<body>
+<div id="main">
+	<img src="images/street.jpg" id="street">
+	<img src="images/car3.png" id="blue" height="200">
+	<img src="images/car2.png" id="green" height="200">
+	<img src="images/car1.png" id="pink" height="200">
+</div>
+</body>
+</html>

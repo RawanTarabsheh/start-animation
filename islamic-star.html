@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Islamic star</title>
+	<style type="text/css">
+		#div1
+		{
+			width: 200px;
+			height: 200px;
+			border: 5px solid green;
+			margin: 100px;	
+		}
+			#div2
+		{
+			width: 200px;
+			height: 200px;
+			border: 5px solid green;
+			transform: rotate(45deg);
+		}
+		#loadingbar
+		{
+			width: 300px;
+			height: 50px;
+			border:2px solid #000;
+			border-radius: 20px;
+			background-color: #fff;
+		}
+		#movecolor
+		{
+width: 0px;
+height: 50px;
+background-color: #fff;
+border-radius: 20px;
+animation: load 3s infinite;
+		}
+		@keyframes load
+		{
+			from {background-color: #fff; width: 0px;}
+			to {background-color: green; width: 250px; }
+		}
+
+
+#movebox
+{
+	width: 300px;
+	height: 300px;
+	background-color: pink;
+	position: relative;
+	animation-name: movebox ;
+	animation-duration: 2s ;
+animation-iteration-count: infinite;
+  animation-delay: -2s;
+}
+@keyframes movebox
+{
+	0%{background-color: pink; left:0px; top:0px;border-top-left-radius:0px; border-bottom-right-radius:0px;}
+	25%{background-color: red; left:300px;top:0px;border-top-left-radius:30px;border-bottom-right-radius:30px;}
+	50%{background-color:green;left:300px;top:300px;border-top-left-radius:50px;border-bottom-right-radius:50px; }
+	75%{background-color: yellow ; left:0; top: 300px; border-top-left-radius: 75px; border-bottom-right-radius: 75px;}
+	100%{background-color: pink; left: 0px; top: 0px;border-top-left-radius: 100px; border-bottom-right-radius: 100px;}
+}
+#newbox
+{
+	width: 200px;
+	height: 200px;
+	background-color: red;
+	border:2px solid #000;
+	animation-name: moveb ;
+	animation-duration: 5s;
+	animation-iteration-count: unset;
+	position: relative;
+	left: 0px;
+	top:500px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+}
+@keyframes moveb
+{
+	from {left:0px; top:500px;	border-top-left-radius: 0px; border-bottom-right-radius: 0px; }
+	to { left:200px; top:800px; border-top-left-radius: 50px; border-bottom-right-radius: 50px; }
+
+}
+
+	</style>
+
+</head>
+<body>
+<div id="div1">
+	<div id="div2"></div>
+</div>
+
+<label>Loading</label>
+<div id="loadingbar" data-label="loading">
+	<div id="movecolor"></div>
+</div>
+
+<br><br>
+<div id="movebox"></div>
+
+<!--<div id="newbox"></div> -->
+</body>
+</html>

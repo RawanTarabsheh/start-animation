@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body
+		{
+			background-color: #000;
+		}
+		.bouncein
+		{
+			width: 500px;
+			height: 300px;
+			background-color: #fff;
+			transform: translate(450px,150px);
+		    color: #fff;
+			text-transform: uppercase;	
+			text-align: center;
+			padding-top:100px;		
+		}
+			#text
+		{
+             animation-name: fontbig;
+			animation-duration: 3s;
+            animation-iteration-count: infinite;
+			text-align: center;
+			font-size: 60px;
+		}
+			@keyframes fontbig
+		{
+			0%{transform: scale(0); color: #fff;}
+			50% {transform: scale(1); color: #AFEEEE;}
+			75% {transform: scale(1.4); color: #AFEEEE;}
+			100% {transform: scale(0); color: #AFEEEE;}
+		}
+		
+	</style>
+</head>
+<body>
+<div class="bouncein">
+	<h1 id="text">bounce In</h1>
+</div>
+</body>
+</html>

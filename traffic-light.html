@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/custumstyle.css">
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+	<style type="text/css">
+		#traffic
+		{
+			width: 100px;
+			height: 300px;
+			border: 6px solid #000;
+			border-radius: 50px;
+			background-color: #000;
+			transform: translate(50px,100px);
+		}
+		#light1
+		{
+			width: 50px;
+			height: 50px;
+			background-color: #000;
+			border:2px solid gray;
+			border-radius: 50px;
+			transform: translate(25px,20px);
+			animation: lightred 2s infinite;
+
+		}
+		@keyframes lightred
+		{
+			from { background-color: #000; }
+			to { background-color: red; }
+		}
+		#light2
+		{
+			width: 50px;
+			height: 50px;
+			background-color: yellow;
+			border:2px solid gray;
+			border-radius: 50px;
+			transform: translate(25px,40px);
+			animation: lightyellows 4s infinite;
+
+		}
+		@keyframes lightyellows
+		{
+			from { background-color: #000;  }
+			to { background-color: yellow;  }
+		}
+		#light3
+		{
+			width: 50px;
+			height: 50px;
+			background-color: #000;
+			border:2px solid gray;
+			border-radius: 50%;
+			transform: translate(25px,60px);
+			animation: lightgreenn 6s infinite;
+		}
+		@keyframes lightgreenn
+		{
+			from { background-color: #000; }
+			to {background-color: green;}
+		}
+		#col1
+		{
+			width: 50px;
+			height: 300px;
+			border: 5px solid #000;
+			background-color: #000;
+			border-top-right-radius: 20%;
+			border-top-left-radius: 20%;
+			transform:translate(75px,95px);
+			z-index: -1;
+
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+<div class="row">
+	<div class="col-lg-4"></div>
+		<div class="col-lg-4">
+				<div id="traffic">
+		<div id="light1"></div>
+		<div id="light2"></div>
+		<div id="light3"></div>
+	</div>
+	<div id="col1"></div>
+		</div>
+	<div class="col-lg-4"></div>
+
+</div>
+	</div>
+</body>
+</html>

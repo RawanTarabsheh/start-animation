@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pro Project In BootStrap</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/custumstyle.css">
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+	<style type="text/css">
+		body
+		{
+			background-color: #000;
+		}
+		.heart
+		{
+			color: red;
+			font-size: 250px;
+			position: relative;
+			top:150px;
+			animation-name: beat;
+			animation-duration: 3s;
+			animation-delay: -2s;
+			animation-iteration-count: infinite;
+
+		}
+		@keyframes beat
+		{
+			0%{ transform: scale(1); }
+			50%{transform: scale(1.2);}
+			55%{transform: scale(1.4);}
+			100%{transform: scale(1);}
+		}
+		.heart1
+		{
+            font-size:  203px;
+            transform: translate(100px,200px);
+			animation: bigger 3s infinite;
+			color:pink;
+		}
+		@keyframes bigger
+		{
+			0%{font-size: 203px;}
+			25%{font-size: 223px;}
+			50%{font-size: 235px;}
+			75%{font-size: 203px;}
+			100%{font-size: 203px;}
+		}
+
+		.imgh
+		{
+			width: 300px;
+			height: 300px;
+			transform: translate(100px,200px);
+			animation: bigimg 2s infinite;
+		}
+		@keyframes bigimg
+		{
+			0%{width: 30%; height:30%;}
+			25%{width: 20%; height:20%;}
+			50%{width: 40%; height:40%}
+			75%{width: 20%; height:20%;}
+			100%{width: 30%; height:30%;}
+		}
+	</style>
+</head>
+<body>
+	  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+<div class="row">
+	<div class="col-lg-4"> 
+			<i class="fas fa-heart heart1"></i>
+	</div>
+		<div class="col-lg-4 mt-5 text-center" style="background-color: #fff; height: 500px; ">
+			<i class="fas fa-heart heart"></i>
+		</div>
+		<div class="col-lg-4">
+			
+			 <img src="images/heart.png" class="imgh">
+
+		</div>
+</div>
+</body>
+</html>

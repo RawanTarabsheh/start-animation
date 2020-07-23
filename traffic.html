@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#traffic
+		{
+			width: 100px;
+			height: 300px;
+			border: 6px solid #000;
+			border-radius: 50px;
+			background-color: #000;
+			transform: translate(50px,100px);
+		}
+		#light1
+		{
+			width: 50px;
+			height: 50px;
+			background-color: #000;
+			border:2px solid gray;
+			border-radius: 50px;
+			transform: translate(25px,20px);
+			animation: lightred 4s infinite;
+			animation-delay: -4s;
+
+		}
+		@keyframes lightred
+		{
+			0%{background-color: red;}
+			50%{background-color: #000;}
+			100%{background-color: #000;}
+		}
+		#light2
+		{
+			width: 50px;
+			height: 50px;
+			background-color: yellow;
+			border:2px solid gray;
+			border-radius: 50px;
+			transform: translate(25px,40px);
+			animation: lightyellows 4s infinite;
+			animation-delay:-4s;
+
+
+		}
+		@keyframes lightyellows
+		{
+			0%{background-color: #000;}
+			50%{background-color: yellow;}
+			100%{background-color: #000;}
+		}
+		#light3
+		{
+			width: 50px;
+			height: 50px;
+			background-color: #000;
+			border:2px solid gray;
+			border-radius: 50px;
+			transform: translate(25px,60px);
+			animation: lightgreenn 4s infinite;
+			animation-delay: -4s;
+
+		}
+		@keyframes lightgreenn
+		{
+			0%{background-color: #000;}
+			50%{background-color: #000;}
+			100% {background-color: green;}
+		}
+		#col1
+		{
+			width: 50px;
+			height: 300px;
+			border: 5px solid #000;
+			background-color: #000;
+			transform:translate(76px,90px);
+			z-index: -1;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="traffic">
+		<div id="light1"></div>
+		<div id="light2"></div>
+		<div id="light3"></div>
+	</div>
+	<div id="col1">
+
+	</div>
+</body>
+</html>
